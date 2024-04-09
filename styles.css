@@ -196,6 +196,128 @@ nav ul li a:hover{
     }
 }
 
+.hidden{
+    display: none;
+}
+
+.services{
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+.services h1, .works h1, .about h1, .contact h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.service-item{
+    flex-basis: 20%;
+    width: 160px;
+    height: 200px;
+    background: var(--primary-color);
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    color: var(--extra-light);
+}
+.service-item:hover{
+    box-shadow: 0 0 10px var(--primary-color-dark);
+    cursor: pointer;
+}
+
+.works, .about, .contact{
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.work-item{
+    flex-basis: 20%;
+    width: 160px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.work-item img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.work-item .layer{
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.work-item .layer:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 200, 0.8);
+}
+.work-item .layer h4{
+    position: absolute;
+    width: 100%;
+    font-weight: 600;
+    color: var(--primary-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+}
+.work-item .layer .work-content{
+    position: absolute;
+    width: 100%;
+    color: white;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    opacity: 0;
+}
+.work-item .layer:hover .work-content{
+    opacity: 1;
+    top: 10%;
+    transition: 1s;
+}
+.about-item img{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    left: 0;
+    top: -40px;
+}
+.about-item{
+    flex-basis: 30%;
+    width: 230px;
+    height: 400px;
+    background: var(--primary-color);
+    box-sizing: border-box;
+    color: var(--primary-color);
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.about-item .about-content{
+    color: white;
+    padding: 15px 10px;
+}
 
 @keyframes slideRight{
     0%{
@@ -260,17 +382,18 @@ nav ul li a:hover{
     .nav-content ul{
         position: absolute;
         width: 100%;
+        max-width: var(--max-width);
         height: 100vh;
-        left: 0;
-        top: 70px;
-        background: var(--primary-color-dark);
+        right: 0;
+        top: 65px;
+        background: var(--extra-light);
         flex-direction: column;
         gap: 3rem;
         justify-content: center;
-        margin-left: -25px;
+        text-align: center;
     }
     .nav-content ul li a {
-        color: white;
+        color: var(--text-dark);
         font-size: medium;
     }
 }
