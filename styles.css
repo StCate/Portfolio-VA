@@ -1,7 +1,7 @@
 :root{
-    --primary-color: #a855f7;
-    --primary-color-dark: #9333ea;
-    --secondary-color: #ca8a04;
+    --primary-color: #ACBCFF;
+    --primary-color-dark: #7EA1FF;
+    --secondary-color: #B799FF;
     --text-dark: #1f2937;
     --text-light: #6b7280;
     --extra-light: #faf5ff;
@@ -155,7 +155,7 @@ nav ul li a:hover{
     font-weight: 600;
     letter-spacing: 1px;
     border: 2px solid var(--primary-color);
-    border-radius: 20px;
+    border-radius: 17px;
     cursor: pointer;
     background-color: var(--primary-color);
     color: #fff;
@@ -164,9 +164,14 @@ nav ul li a:hover{
     animation-delay: 0.7s
 }
 
+.works-btn{
+    background-color: var(--secondary-color);
+}
+
 .see-more:hover, .works-btn:hover{
     background-color: var(--primary-color-dark);
-}
+    border: 2px solid var(--primary-color-dark);
+ }
 
 .image img{
     max-width: 320px;
@@ -251,7 +256,7 @@ nav ul li a:hover{
 .works-row{
     display: flex;
     align-items: center;
-    margin-top: 25px;
+    /*margin-top: 25px;*/
 }
 
 .works-row .box{
@@ -261,7 +266,7 @@ nav ul li a:hover{
     align-items: center;
     justify-content: space-between;
     padding: 2rem 5%;
-    background: var(--secondary-color);
+    background: var(--primary-color);
 }
 .works-row .trans{
     display: none;
@@ -299,7 +304,7 @@ nav ul li a:hover{
     font-weight: bold;
     border-radius: 0 3px 3px 0;
     padding: 0.5rem 4%;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .next{
@@ -353,7 +358,7 @@ nav ul li a:hover{
     padding: 20px;
 }
 
-.contact-container input[type=text], textarea {
+.contact-container input[type=text], input[type=email], textarea {
   width: 100%;
   padding: 13px;
   border: 1 px solid var(--primary-color);
@@ -397,7 +402,7 @@ input[type=submit]:hover {
 }
 
 .contact-container input[type=text]:focus, textarea:hover{
-    box-shadow: 0 0 5px var(--primary-color-dark);
+    box-shadow: 0 0 2px var(--primary-color-dark);
 }
 
 .contact-container ::placeholder{
@@ -464,6 +469,7 @@ input[type=submit]:hover {
 @media(max-width: 750px) {
     nav .logo{
         font-size: 1.2rem;
+        padding: 0 2%;
     } 
     .section{
         width: 100%;
@@ -524,7 +530,7 @@ input[type=submit]:hover {
         line-height: 0.9rem;
     }
     .description{
-        margin-bottom: 0.8rem;
+        margin-bottom: 0.9rem;
     }
     .works-content p{
         margin-bottom: 0.4rem;
@@ -566,7 +572,7 @@ input[type=submit]:hover {
         margin-bottom: 0.5rem;
         font-size: 1.1rem;
     }
-    .works-row .box p{
+    .works-row .box p, .about-content p{
         line-height: 1.2rem;
         font-size: 0.9rem;
     }
@@ -582,5 +588,15 @@ input[type=submit]:hover {
     }
     .prev, .next{
         padding: 1.8rem;
+    }
+    .contact-container{
+        width: 70%;
+    }
+    .contact-container input[type=text], textarea{
+        border-radius: 10px;
+    }
+    .services, .about{
+        display: flex;
+        flex-direction: column;
     }
 }
