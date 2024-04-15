@@ -1,7 +1,7 @@
 :root{
     --primary-color: #ACBCFF;
     --primary-color-dark: #7EA1FF;
-    --secondary-color: #B799FF;
+    --secondary-color: var(--primary-color-dark);
     --text-dark: #1f2937;
     --text-light: #6b7280;
     --extra-light: #faf5ff;
@@ -165,7 +165,7 @@ nav ul li a:hover{
 }
 
 .works-btn{
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color-dark);
 }
 
 .see-more:hover, .works-btn:hover{
@@ -304,7 +304,7 @@ nav ul li a:hover{
     font-weight: bold;
     border-radius: 0 3px 3px 0;
     padding: 0.5rem 4%;
-    color: var(--secondary-color);
+    color: var(--primary-color-dark);
 }
 
 .next{
