@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/solid.css">
+    <link rel="stylesheet" href="css/brands.css">
     <title>Portfolio | Rivaldo</title>
 </head>
 <body>
     <header>
         <nav class="nav-content">
             <a href="#" class="logo">Rivaldo</a>
-            
-            <label for="check" class="checkbox">
-                <i class="ri-menu-line"></i>
-            </label>
-            <input type="checkbox" name="check" id="check">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul id="myMenu" class="menuDrop">
+                <li><a href="#home" onclick="hideContent()">Home</a></li>
+                <li><a href="#services" onclick="hideContent()">Services</a></li>
+                <li><a href="#works" onclick="hideContent()">Works</a></li>
+                <li><a href="#contact" onclick="hideContent()">Contact</a></li>
+                <li><a onclick="darklight()" class="light">Dark/Light Mode</a></li>
             </ul>
+                <i class="fa-solid fa-bars" onclick="showMenu()" id="bars"></i>
         </nav>
-        <i class="fa fa-bars"></i>
     </header>
 
     <section class="section" id="home">
@@ -146,6 +145,12 @@
             
                 <input type="submit" value="Send">
               </form>
+         </div>
+         <div class="icon">
+            <a href="https://web.facebook.com/giani.andria.5"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:rivaldoranarison@gmail.com? subject = Subject Text&body = Content of the mail"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://wa.me/+261340915517"><i class="fa-brands fa-whatsapp"></i></a>
          </div>
          </div>
 </section>

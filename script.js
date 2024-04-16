@@ -21,3 +21,23 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "flex";
 }
+
+
+function showMenu(){
+  var x = document.getElementById("myMenu");
+
+  if(x.style.display != "flex"){
+  x.style.display = "flex";
+  x.style.right = "0";
+  }
+  else{
+    x.style.display = "none";
+  }
+}
+
+var y = document.getElementById("myMenu");
+function hideContent(){
+  if(window.innerWidth<=750){
+  y.style.display = "none";
+  }
+}
