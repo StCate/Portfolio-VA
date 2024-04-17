@@ -219,7 +219,7 @@ nav ul li a:hover{
 .service-item{
     /*flex-basis: 23%;*/
     width: 20%;
-    height: 470px;
+    height: 440px;
     background: var(--primary-color);
     border-radius: 10px;
     padding: 10px 10px;
@@ -227,10 +227,19 @@ nav ul li a:hover{
     color: var(--extra-light);
 }
 .service-item:hover{
-    box-shadow: 0 0 10px var(--primary-color-dark);
+    box-shadow: 0 0 5px var(--primary-color-dark);
     cursor: pointer;
 }
-
+.service-item i{
+    font-size: 60px;
+    padding: 6%;
+}
+.service-item h4{
+    margin-bottom: 4%;
+}
+.service-item p{
+    font-size: small;
+}
 .service-right{
     opacity: 0;
     animation: slideRight 0.7s ease forwards;
@@ -558,7 +567,7 @@ input[type=submit]:hover {
         line-height: 0.9rem;
     }
     .description, .works-content p{
-        line-height: 0.9rem;
+        line-height: 1.2rem;
     }
     .description{
         margin-bottom: 0.9rem;
