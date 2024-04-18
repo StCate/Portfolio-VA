@@ -208,7 +208,6 @@ nav ul li a:hover{
 }
 .row{
     display: flex;
-    /*justify-content: space-between;*/
     flex-wrap: wrap;
     padding: 0 4%;
     align-items: center;
@@ -217,12 +216,11 @@ nav ul li a:hover{
     margin-bottom: 30px;
 }
 .service-item{
-    /*flex-basis: 23%;*/
     width: 20%;
     height: 440px;
     background: var(--primary-color);
     border-radius: 10px;
-    padding: 10px 10px;
+    padding: 14px 16px;
     box-sizing: border-box;
     color: var(--extra-light);
 }
@@ -239,6 +237,9 @@ nav ul li a:hover{
 }
 .service-item p{
     font-size: small;
+    text-align: center;
+    padding: 2% 5%;
+    margin: auto;
 }
 .service-right{
     opacity: 0;
@@ -341,27 +342,34 @@ nav ul li a:hover{
     from {opacity: .4}
     to {opacity: 1}
   }
-.about-item img{
-    position: absolute;
+.about .rows{
+    display: flex;
     width: 100%;
-    object-fit: cover;
-    left: 0;
-    top: -40px;
+    justify-content: center;
 }
 .about-item{
-    flex-basis: 30%;
-    width: 230px;
-    height: 400px;
+    width: 24%;
+    border-radius: 10px;
+    height: 460px;
     background: var(--primary-color);
     box-sizing: border-box;
     color: var(--primary-color);
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
+    margin: 0 5%;
+    padding: 1.5%;
+}
+
+.about-item .image-about img{
+    max-width: 150px;
+    border-radius: 100%;
+    border: 4px solid var(--primary-color-dark);
 }
 .about-item .about-content{
     color: white;
     padding: 15px 10px;
+    font-size: small;
 }
 
 .contact-container{
@@ -580,16 +588,21 @@ input[type=submit]:hover {
     } 
     .row{
         display: flex;
+        flex-wrap: wrap;
         position: relative;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
     .service-item{
-        width: 40%;
-        height: 200px;
+        width: 50%;
+        height: 280px;
         margin-bottom: 5%;
     }
+    .service-item i{
+        font-size: 30px;
+    } 
+    
     .service-item h4{
         font-size: 0.9rem;
         font-weight: 600;
@@ -597,7 +610,7 @@ input[type=submit]:hover {
     }
     .service-item p{
         line-height: 0.9rem;
-        font-size: 0.9rem; 
+        font-size: 0.8rem; 
     }
     .works-row .box{
         flex-direction: column;
@@ -644,5 +657,21 @@ input[type=submit]:hover {
     }
     .icon i{
         padding: 0 0.6rem;
+    }
+    .rows{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-item{
+        width: 50%;
+        margin-bottom: 5%;
+    }
+    .about-item p{
+        font-size: 0.7rem;
+    }
+    .about-item p strong{
+        font-size: 0.8rem;
     }
 }
