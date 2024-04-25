@@ -61,7 +61,7 @@ header a{
 
 .container .works-item{
     width: 23%;
-    height: 440px;
+    height: 420px;
     background: var(--primary-color-dark);
     border-radius: 10px;
     padding: 1.5%;
@@ -153,6 +153,11 @@ a{
         transform: translateY(0);
     }
 }
+footer{
+    margin: auto;
+    font-size: small;
+    padding-bottom: 1rem;
+}
 @media (max-width: 750px) {
     header{
         z-index: 99;
@@ -174,8 +179,26 @@ a{
     }
     .container .works-item{
         width: 60%;
-        height: 400px;
+        height: 360px;
+        padding: 2%;
         margin-bottom: 6%;
     }
-
+    .works-content .works-image img{
+        max-width: 160px;
+        margin-top: 0.5rem;
+    }
+    .works-content h4{
+        font-size: 75%;
+    }
+    .works-content p{
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+    .btn{
+        width: 110px;
+        font-size: 0.8rem;
+    }
+    footer{
+        font-size: 0.6rem;
+    }
 }
