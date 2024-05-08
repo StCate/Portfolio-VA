@@ -150,6 +150,12 @@ a{
 .article .conclusion{
     margin-top: 2%;
 }
+.article .a2{
+    margin-top: 2.5%;
+}
+.article .a3{
+    margin-top: 2%;
+}
 
 @keyframes slideRight{
     0%{
