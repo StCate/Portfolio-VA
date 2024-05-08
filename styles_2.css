@@ -120,6 +120,36 @@ header a{
 a{
     text-decoration: none;
 }
+.article{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.article h3{
+    margin-top: 12%;
+}
+.article .intro{
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+.article img{
+    width: 60%;
+}
+.article .title{
+    text-align: center;
+    margin-top: 0.4rem;
+}
+.article p{
+    margin-bottom: 0.8rem;
+    text-align: justify;
+}
+.article .conclusion{
+    margin-top: 2%;
+}
 
 @keyframes slideRight{
     0%{
@@ -186,13 +216,16 @@ footer{
     .works-content .works-image img{
         max-width: 160px;
         margin-top: 0.5rem;
+        margin-bottom: 0.4rem;
     }
     .works-content h4{
         font-size: 75%;
+        margin-bottom: 0.5rem;
     }
     .works-content p{
         font-size: 0.7rem;
         font-weight: 500;
+        margin-bottom: 0.8rem;
     }
     .btn{
         width: 110px;
@@ -200,5 +233,21 @@ footer{
     }
     footer{
         font-size: 0.6rem;
+    }
+    .article{
+        width: 80%;
+    }
+    .article img{
+        width: 80%;
+    }
+    .article h3{
+        font-size: 1.3rem;
+    }
+    .article p{
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    .article .title{
+        font-size: 90%;
     }
 }

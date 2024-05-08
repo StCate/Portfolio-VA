@@ -66,10 +66,12 @@ header a{
     margin: auto;
     margin-top: 2%;
     margin-bottom: 4%;
+    text-align: justify;
 }
 
 .content h4{
     margin-top: 2.5%;
+    text-align: center;
 }
 
 .content img{
